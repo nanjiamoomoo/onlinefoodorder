@@ -1,0 +1,8 @@
+com\project\entities\Cart.class
+com\project\entities\Restaurant.class
+com\project\entities\Customer.class
+com\project\entities\Authorities.class
+com\project\entities\MenuItem.class
+com\project\entities\OrderItem.class
+com\project\mapper\RestaurantMapper.class
+com\project\mapper\MenuItemMapper.class
