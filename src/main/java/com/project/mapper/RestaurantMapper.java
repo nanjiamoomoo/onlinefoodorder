@@ -1,6 +1,6 @@
 package com.project.mapper;
 
-import com.project.entities.Restaurant;
+import com.project.entity.Restaurant;
 
 public interface RestaurantMapper {
 

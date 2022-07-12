@@ -1,8 +1,15 @@
 com\project\entities\Cart.class
+com\project\service\impl\CartServiceImpl.class
 com\project\entities\Restaurant.class
-com\project\entities\Customer.class
+com\project\mapper\CartMapper.class
 com\project\entities\Authorities.class
-com\project\entities\MenuItem.class
 com\project\entities\OrderItem.class
 com\project\mapper\RestaurantMapper.class
+com\project\controller\SignUpController.class
+com\project\service\CartService.class
+com\project\service\CustomerService.class
+com\project\entities\Customer.class
+com\project\entities\MenuItem.class
 com\project\mapper\MenuItemMapper.class
+com\project\mapper\CustomerMapper.class
+com\project\service\impl\CustomerServiceImpl.class

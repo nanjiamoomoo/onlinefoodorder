@@ -1,6 +1,6 @@
 package com.project.mapper;
 
-import com.project.entities.MenuItem;
+import com.project.entity.MenuItem;
 
 import java.util.List;
 

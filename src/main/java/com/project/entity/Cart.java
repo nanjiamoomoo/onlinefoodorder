@@ -1,4 +1,4 @@
-package com.project.entities;
+package com.project.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Authorities implements Serializable {
-    private String email;
-    private String authorities;
+public class Cart implements Serializable {
+    private Integer cartId;
+    private Double totalPrice;
 }

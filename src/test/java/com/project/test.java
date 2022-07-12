@@ -1,7 +1,7 @@
 package com.project;
 
-import com.project.entities.MenuItem;
-import com.project.entities.Restaurant;
+import com.project.entity.MenuItem;
+import com.project.entity.Restaurant;
 import com.project.mapper.MenuItemMapper;
 import com.project.mapper.RestaurantMapper;
 import org.apache.ibatis.io.Resources;

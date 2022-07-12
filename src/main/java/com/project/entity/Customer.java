@@ -1,8 +1,9 @@
-package com.project.entities;
+package com.project.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.lang.Nullable;
 
 import java.io.Serializable;
 

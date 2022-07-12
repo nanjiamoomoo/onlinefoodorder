@@ -1,8 +1,15 @@
 C:\projects\onlineFoodOrder\src\main\java\com\project\entities\Customer.java
-C:\projects\onlineFoodOrder\src\main\java\com\project\entities\MenuItem.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\service\CustomerService.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\CartServiceImpl.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entities\Cart.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entities\Authorities.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\service\CartService.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\CustomerServiceImpl.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\MenuItemMapper.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\entities\MenuItem.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\CartMapper.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\CustomerMapper.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\controller\SignUpController.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\RestaurantMapper.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entities\OrderItem.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entities\Restaurant.java
-C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\MenuItemMapper.java
