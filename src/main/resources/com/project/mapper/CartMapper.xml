@@ -7,4 +7,9 @@
     <insert id="addCart" useGeneratedKeys="true" keyProperty="cartId">
         insert into cart values(DEFAULT, 0);
     </insert>
+
+<!--    &lt;!&ndash;List<OrderItem> getCart(Integer cartId)&ndash;&gt;-->
+<!--    <select id="getCart" resultType="OrderItem">-->
+<!--        select * from orderitem where cartid = #{cartId}-->
+<!--    </select>-->
 </mapper>

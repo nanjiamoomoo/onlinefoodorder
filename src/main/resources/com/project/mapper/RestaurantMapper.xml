@@ -3,8 +3,8 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.mapper.RestaurantMapper">
-    <!--MenuItem findMenuItemByID();-->
-    <select id="findRestaurantById" resultType="restaurant">
-        select * from restaurant where restaurantid = #{restaurantid}
+
+    <select id="getRestaurants" resultType="restaurant">
+        select * from restaurant
     </select>
 </mapper>

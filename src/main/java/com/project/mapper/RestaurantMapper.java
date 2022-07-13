@@ -2,11 +2,13 @@ package com.project.mapper;
 
 import com.project.entity.Restaurant;
 
+import java.util.List;
+
 public interface RestaurantMapper {
 
     /**
-     * find restaurant info based on restaurant id
-     * @return restaurant info
+     * get all restaurants info
+     * @return restaurants info
      */
-    Restaurant findRestaurantById(int RestaurantId);
+    List<Restaurant> getRestaurants();
 }

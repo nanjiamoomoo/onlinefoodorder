@@ -1,3 +1,4 @@
+/*
 package com.project;
 
 import com.project.entity.MenuItem;
@@ -60,3 +61,4 @@ public class test {
         sqlSession.close();
     }
 }
+*/
