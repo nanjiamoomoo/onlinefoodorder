@@ -9,9 +9,4 @@ public interface OrderItemService {
     */
    int addMenuItemToCart(Integer menuItemId);
 
-   /**
-    * remove all the orderItems with the specific cartId
-    * @param cartId
-    */
-   void removeAllOrderItemsWithCartId(int cartId);
 }
