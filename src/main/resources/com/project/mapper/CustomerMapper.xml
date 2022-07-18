@@ -3,8 +3,53 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.mapper.CustomerMapper">
-    <!--int addCustomer(Customer customer);-->
+    <!--
+        implementation of addCustomer function
+        int addCustomer(Customer customer);
+    -->
     <insert id="addCustomer">
-        insert into customer values(#{email}, #{firstName}, #{lastName}, #{password}, #{cartId})
+        insert
+        into customer
+        values (#{email}, #{firstName}, #{lastName}, #{password}, #{cartId})
     </insert>
+
+    <!--
+        implementation of addCustomer function
+        int addAuthorities(Authorities authorities);
+    -->
+    <insert id="addAuthorities">
+        insert into authorities
+        values (#{email}, #{authorities})
+    </insert>
+
+    <!--
+        implementation of findCustomerByEmail function
+        Customer findCustomerByEmail(String email);
+    -->
+    <select id="findCustomerByEmail" resultType="customer">
+        select *
+        from customer
+        where email = #{email}
+    </select>
+
+
+    <!--
+        implementation of findCustomerAuthorityByEmail function
+        String findCustomerAuthorityByEmail(String email);
+    -->
+    <select id="findCustomerAuthorityByEmail" resultType="string">
+        select authorities
+        from authorities
+        where email = #{email}
+    </select>
+
+    <!--
+        implementation of getCustomerCartIdByUsername function
+        Integer getCustomerCartIdByUsername(String username)
+    -->
+    <select id="getCustomerCartIdByUsername" resultType="int">
+        select cartid
+        from customer
+        where email = #{email}
+    </select>
 </mapper>

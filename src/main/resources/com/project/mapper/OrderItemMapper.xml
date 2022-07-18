@@ -3,8 +3,22 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.mapper.OrderItemMapper">
-    <!--getMenusByRestaurantId(int restaurantId)-->
-    <insert id="addMenuItemToCart">
-
+    <!--
+        implementation of addOrderItem function
+        int addOrderItem (OrderItem orderItem)
+    -->
+    <insert id="addOrderItem">
+        insert into
+        orderitem values(DEFAULT, #{quantity}, #{price}, #{menuItemId}, #{cartId})
     </insert>
+
+    <!--
+        implementation of removal function, to remove all orderItems with the specific cartId
+        void removeAllOrderItemsWithCartId(int cartId)
+    -->
+    <delete id="removeAllOrderItemsWithCartId">
+        delete from
+        orderitem
+        where cartid = #{cartid}
+    </delete>
 </mapper>

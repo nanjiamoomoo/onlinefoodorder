@@ -4,7 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.mapper.RestaurantMapper">
 
+    <!--
+        implementation of getRestaurants function
+        List<Restaurant> getRestaurants()
+    -->
     <select id="getRestaurants" resultType="restaurant">
-        select * from restaurant
+        select *
+        from restaurant
     </select>
+
 </mapper>

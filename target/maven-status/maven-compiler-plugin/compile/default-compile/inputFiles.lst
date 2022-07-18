@@ -5,6 +5,7 @@ C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\CustomerServi
 C:\projects\onlineFoodOrder\src\main\java\com\project\entity\Authorities.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\MenuItemMapper.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\controller\OrderItemController.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\entity\CartWrapper.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\controller\CartController.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\controller\RestaurantController.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\CartMapper.java
@@ -15,14 +16,15 @@ C:\projects\onlineFoodOrder\src\main\java\com\project\controller\MenuInfoControl
 C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\OrderItemMapper.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\OrderItemServiceImpl.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\RestaurantService.java
-C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\AuthoritiesMapper.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\CustomerService.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\CartServiceImpl.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\CartService.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entity\Cart.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entity\OrderItem.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\config\SecurityConfig.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\service\MenuItemService.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\controller\SignInController.java
+C:\projects\onlineFoodOrder\src\main\java\com\project\service\impl\CustomerDetailedServiceImpl.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\entity\MenuItem.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\controller\SignUpController.java
 C:\projects\onlineFoodOrder\src\main\java\com\project\mapper\RestaurantMapper.java

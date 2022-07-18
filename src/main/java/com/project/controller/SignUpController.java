@@ -19,6 +19,7 @@ public class SignUpController {
     @RequestMapping(value = "/signup", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.CREATED)
     public void signUp(@RequestBody Customer customer) {
+        System.out.println(customer);
         customerService.addCustomer(customer);
     }
 }

@@ -7,6 +7,8 @@ com\project\controller\MenuInfoController.class
 com\project\controller\SignUpController.class
 com\project\service\CartService.class
 com\project\service\CustomerService.class
+com\project\config\SecurityConfig.class
+com\project\entity\CartWrapper.class
 com\project\controller\OrderItemController.class
 com\project\service\impl\MenuItemServiceImpl.class
 com\project\service\impl\CustomerServiceImpl.class
@@ -19,10 +21,10 @@ com\project\entity\Cart.class
 com\project\entity\Customer.class
 com\project\service\impl\RestaurantServiceImpl.class
 com\project\service\OrderItemService.class
-com\project\mapper\AuthoritiesMapper.class
 com\project\entity\Restaurant.class
 com\project\service\MenuItemService.class
 com\project\mapper\OrderItemMapper.class
 com\project\mapper\MenuItemMapper.class
 com\project\entity\MenuItem.class
 com\project\mapper\CustomerMapper.class
+com\project\service\impl\CustomerDetailedServiceImpl.class
