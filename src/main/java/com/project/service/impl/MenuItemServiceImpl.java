@@ -15,7 +15,12 @@ public class MenuItemServiceImpl implements MenuItemService {
     private MenuItemMapper menuItemMapper;
 
     @Override
-    public List<MenuItem> getMenusByRestaurantId(Integer restaurantId) {
+    public List<MenuItem> getMenusByRestaurantId(int restaurantId) {
         return menuItemMapper.getMenusByRestaurantId(restaurantId);
+    }
+
+    @Override
+    public MenuItem getMenuItemById(int menuItemId) {
+        return menuItemMapper.getMenuItemById(menuItemId);
     }
 }

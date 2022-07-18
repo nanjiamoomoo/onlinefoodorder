@@ -9,6 +9,7 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
+
     <!--spring Listener, create Spring Core when ServletContext is created and put the Spring Core in the Servlet Context-->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

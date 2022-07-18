@@ -23,37 +23,37 @@
             <artifactId>spring-context</artifactId>
             <version>5.3.5</version>
         </dependency>
-        <!--spring切面包-->
+        <!--spring AOP-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>5.3.5</version>
         </dependency>
-        <!--aop联盟包-->
+        <!--aop alliance-->
         <dependency>
             <groupId>aopalliance</groupId>
             <artifactId>aopalliance</artifactId>
             <version>1.0</version>
         </dependency>
-        <!--德鲁伊连接池-->
+        <!--Druid connection pool-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
             <version>1.1.10</version>
         </dependency>
-        <!--springJDBC包-->
+        <!--springJDBC-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-jdbc</artifactId>
             <version>5.3.5</version>
         </dependency>
-        <!--spring事务控制包-->
+        <!--spring transaction control-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
             <version>5.3.5</version>
         </dependency>
-        <!--spring orm 映射依赖-->
+        <!--spring orm mapping-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
@@ -71,7 +71,7 @@
             <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
-        <!--json依赖-->
+        <!--json-->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
@@ -89,7 +89,7 @@
             <artifactId>mybatis</artifactId>
             <version>3.5.6</version>
         </dependency>
-        <!--spring mybatis整合包-->
+        <!--spring mybatis combination-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-spring</artifactId>
@@ -101,7 +101,7 @@
             <artifactId>commons-logging</artifactId>
             <version>1.2</version>
         </dependency>
-        <!--log4j2 日志-->
+        <!--log4j2 log-->
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j-impl</artifactId>
@@ -116,7 +116,7 @@
             <version>1.18.22</version>
             <scope>provided</scope>
         </dependency>
-        <!--spring test测试支持包-->
+        <!--spring test support-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
@@ -160,9 +160,6 @@
             <artifactId>spring-security-config</artifactId>
             <version>5.5.2</version>
         </dependency>
-
-
-
     </dependencies>
 
     <build>

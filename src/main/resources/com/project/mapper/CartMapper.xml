@@ -3,13 +3,42 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.project.mapper.CartMapper">
-    <!--int addCart(Cart cart);-->
+    <!--
+        implementation of addCart function
+        int addCart(Cart cart)
+    -->
     <insert id="addCart" useGeneratedKeys="true" keyProperty="cartId">
-        insert into cart values(DEFAULT, 0);
+        insert into cart
+        values (DEFAULT, 0);
     </insert>
 
-<!--    &lt;!&ndash;List<OrderItem> getCart(Integer cartId)&ndash;&gt;-->
-<!--    <select id="getCart" resultType="OrderItem">-->
-<!--        select * from orderitem where cartid = #{cartId}-->
-<!--    </select>-->
+    <!--
+        implementation of findCartById function
+        Cart findCartById(int cartId)
+    -->
+    <select id="findCartById" resultType="cart">
+        select *
+        from cart
+        where cartid = #{cartid}
+    </select>
+
+    <!--
+        implementation of updateCartTotalPrice function
+        int updateCartTotalPrice(int orderItemPrice)
+    -->
+    <update id="updateCartTotalPrice">
+        update cart
+        set totalprice = #{param1}
+        where cartid = #{param2}
+    </update>
+
+    <!--
+        implementation of findOrderItemsByCartId function
+        List<OrderItem> findOrderItemsByCartId(int cartId)
+    -->
+    <select id="findOrderItemsByCartId" resultType="orderItem">
+        select *
+        from orderitem
+        where cartid = #{cartid}
+    </select>
 </mapper>

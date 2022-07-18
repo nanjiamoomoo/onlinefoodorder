@@ -1,5 +1,6 @@
 package com.project.service.impl;
 
+import com.project.entity.MenuItem;
 import com.project.entity.Restaurant;
 import com.project.mapper.RestaurantMapper;
 import com.project.service.RestaurantService;
@@ -18,4 +19,6 @@ public class RestaurantServiceImpl implements RestaurantService {
     public List<Restaurant> getRestaurants() {
         return restaurantMapper.getRestaurants();
     }
+
+
 }

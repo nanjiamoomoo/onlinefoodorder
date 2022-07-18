@@ -22,16 +22,13 @@
        http://www.springframework.org/schema/mvc
        http://www.springframework.org/schema/mvc/spring-mvc.xsd
 ">
-    <!--Scan controller-->
+    <!--Scan controllers under com.project.controller package-->
     <context:component-scan base-package="com.project.controller"></context:component-scan>
-    <!--Config 3 Core Components-->
-    <mvc:annotation-driven />
+
+    <!--Config RequestMappingHandlerMapping and RequestMappingHandlerAdapter-->
+    <mvc:annotation-driven/>
+
     <!--Config View Resolver-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-    </bean>
-    <!--配置静态资源放行-->
-    <!--<mvc:resources mapping="/js/**" location="/js/"></mvc:resources>-->
-    <!--<mvc:resources mapping="/css/**" location="/css/"></mvc:resources>-->
-    <!--<mvc:resources mapping="/img/**" location="/img/"></mvc:resources>-->
-    <!--<mvc:resources mapping="/static/**" location="/static/"></mvc:resources>-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
+
 </beans>
