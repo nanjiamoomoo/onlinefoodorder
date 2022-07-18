@@ -47,9 +47,4 @@ public class CustomerServiceImpl implements CustomerService {
 
         return customerMapper.addCustomer(customer);
     }
-
-    @Override
-    public Integer getCustomerCartIdByUsername(String username) {
-        return customerMapper.getCustomerCartIdByUsername(username);
-    }
 }

@@ -3,6 +3,7 @@ package com.project.service.impl;
 import com.project.entity.Cart;
 import com.project.entity.MenuItem;
 import com.project.entity.OrderItem;
+import com.project.mapper.CustomerMapper;
 import com.project.mapper.OrderItemMapper;
 import com.project.service.CartService;
 import com.project.service.CustomerService;
@@ -26,7 +27,7 @@ public class OrderItemServiceImpl implements OrderItemService {
     private MenuItemService menuItemService;
 
     @Autowired
-    private CustomerService customerService;
+    private CustomerMapper customerMapper;
 
     @Autowired
     private CartService cartService;
@@ -44,7 +45,7 @@ public class OrderItemServiceImpl implements OrderItemService {
         System.out.println(username);
 
         //get cartId based on the username
-        Integer cartId = customerService.getCustomerCartIdByUsername(username);
+        Integer cartId = customerMapper.getCustomerCartIdByUsername(username);
         System.out.println(cartId);
 
         //set attributes to the new orderItem object
@@ -66,8 +67,4 @@ public class OrderItemServiceImpl implements OrderItemService {
        return cartService.updateCartTotalPrice(total, cartId);
     }
 
-    @Override
-    public void removeAllOrderItemsWithCartId(int cartId) {
-        orderItemMapper.removeAllOrderItemsWithCartId(cartId);
-    }
 }

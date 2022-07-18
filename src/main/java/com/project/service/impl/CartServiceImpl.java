@@ -4,6 +4,8 @@ import com.project.entity.CartWrapper;
 import com.project.entity.Cart;
 import com.project.entity.OrderItem;
 import com.project.mapper.CartMapper;
+import com.project.mapper.CustomerMapper;
+import com.project.mapper.OrderItemMapper;
 import com.project.service.CartService;
 import com.project.service.CustomerService;
 import com.project.service.OrderItemService;
@@ -24,10 +26,10 @@ public class CartServiceImpl implements CartService {
     private CartMapper cartMapper;
 
     @Autowired
-    private CustomerService customerService;
+    private CustomerMapper customerMapper;
 
     @Autowired
-    private OrderItemService orderItemService;
+    private OrderItemMapper orderItemMapper;
 
 
     @Override
@@ -55,7 +57,7 @@ public class CartServiceImpl implements CartService {
         String username = loggedInUser.getName();
 
         //get cartId based on the username
-        Integer cartId = customerService.getCustomerCartIdByUsername(username);
+        Integer cartId = customerMapper.getCustomerCartIdByUsername(username);
 
         //find cart
         Cart cart = findCartById(cartId);
@@ -85,9 +87,9 @@ public class CartServiceImpl implements CartService {
         String username = loggedInUser.getName();
 
         //get cartId based on the username
-        Integer cartId = customerService.getCustomerCartIdByUsername(username);
+        Integer cartId = customerMapper.getCustomerCartIdByUsername(username);
 
-        orderItemService.removeAllOrderItemsWithCartId(cartId);
+        orderItemMapper.removeAllOrderItemsWithCartId(cartId);
         updateCartTotalPrice(0, cartId);
     }
 }

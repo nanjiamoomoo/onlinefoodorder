@@ -13,10 +13,4 @@ public interface CustomerService {
      */
     int addCustomer(Customer customer);
 
-    /**
-     * find customer cartId by customer username(email address)
-     * @param username (customer email address)
-     * @return cartId
-     */
-    Integer getCustomerCartIdByUsername(String username);
 }
