@@ -27,13 +27,13 @@ The project is built by using XML configurations and properties file.
 **_`log4j2.xml`_** Log configuration
 
 ### **Database Schema**
+The Java classes are defined under entity package. 
 ![](src/main/resources/img/img.png)
 
 ### **3 Layers**
 **_`Controller Layer`_** <https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/controller>
-This layer defines all the controllers and REST APIs. DispatcherServlet will send the request to the corresponding controller API based on the url. This layer handles the communication with frontend and all requests will go through this layer before sending to next layer for process. This layer does not handle service logic and all the service logic will be handled by the service layer. For example, the getRestaurants() method under RestaurantController (<https://github.com/nanjiamoomoo/onlineFoodOrder/blob/zackary/src/main/java/com/project/controller/RestaurantController.java>), this method will get all restaurants' info and respond all the 
-info as a list to the frontend. In this layer, we do not care how we get all the restaurants' info. Instead, we pass down the request to restaurantService to do all the 
-operations needed and return what is needed. This mechanism decouples controller layer from service layer and makes the web application easy to maintain, and more reusable and robust. 
+This layer defines all the controllers and REST APIs. DispatcherServlet will send the request to the corresponding controller API based on the url. This layer handles the communication with frontend and all requests will go through this layer before sending to the service layer for processing. This layer does not handle service logic which is done in service layer. For example, the getRestaurants() method under RestaurantController (<https://github.com/nanjiamoomoo/onlineFoodOrder/blob/zackary/src/main/java/com/project/controller/RestaurantController.java>), this method is only responsible for receiving request and responding all the 
+restaurants' info returned from service layer to the frontend. How to get the restaurants' info? Controller layer does not care! This mechanism decouples controller layer from service layer and makes the web application easy to maintain, and more reusable and robust. 
 
 **_`Service Layer`_** <https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/service>
 This layer contains all the service logic and mediates communications between controller and repository layer. For example, the addCustomer() method under service component CustomerServiceImpl (<https://github.com/nanjiamoomoo/onlineFoodOrder/blob/zackary/src/main/java/com/project/service/impl/CustomerServiceImpl.java>).
