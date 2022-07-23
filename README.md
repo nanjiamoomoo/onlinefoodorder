@@ -27,7 +27,7 @@ The project is built by using XML configurations and properties file.
 **_`log4j2.xml`_** Log configuration
 
 ### **Database Schema**
-![](img/img.png)
+![](src/main/resources/img/img.png)
 
 ### **3 Layers**
 **_`Controller Layer`_** <https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/controller>
@@ -50,7 +50,7 @@ these all.
 * Set up database and create tables based on the schema shown above. 
 * Insert data into the restaurant table and menuitem table (restaurantinfo.sql and andmenuiteminfo.sql can be
 used for testing). 
-* Open jdbc.properties and change <url> under jdbc:mysql://<url>:3306/... with the actual database url to connect to the database
+* Open jdbc.properties and change url under jdbc:mysql://url:3306/... with the actual database url to connect to the database
 
 ### **Use Postman to test APIs**
 * Download Postman to test the controller APIs
