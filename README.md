@@ -27,7 +27,7 @@ The project is built by using XML configurations and properties file.
 **_`log4j2.xml`_** Log configuration
 
 ### **Database Schema**
-![img.png](https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/resources/img/img.png?raw=true)
+![img.png](https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/resources/img/img.png/to/img.png)
 
 ### **3 Layers**
 **_`Controller Layer`_** <https://github.com/nanjiamoomoo/onlineFoodOrder/tree/zackary/src/main/java/com/project/controller>
