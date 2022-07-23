@@ -31,4 +31,7 @@
     <!--Config View Resolver-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"></bean>
 
+    <!--config static resources release-->
+    <mvc:resources mapping="/img/**" location="/img/"></mvc:resources>
+
 </beans>
