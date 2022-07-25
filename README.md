@@ -52,6 +52,10 @@ these all.
 used for testing). 
 * Open jdbc.properties and change url under jdbc:mysql://url:3306/... with the actual database url to connect to the database
 
+### **Test Database CRUD Operations with JUnit**
+* Configure JUnit using Annotation @SpringJUnitConfig(locations = "classpath:applicationContext.xml").
+* Create Test class under 'test' package and write test Method for each operation. For Example, test 'addOrderItem to Cart' reference  <https://github.com/nanjiamoomoo/onlineFoodOrder/blob/main/src/test/java/com/project/test/Test.java>.
+
 ### **Use Postman to test APIs**
 * Download Postman to test the controller APIs
 * Create signup request to register. Send POST request in JSON format to (http://localhost:8080/signup) such as
@@ -61,5 +65,5 @@ used for testing).
   "lastName": "admin,
   "password": "123456"
   }
-* Create login request. Send POST request to (http://localhost:8080/login) with the email and password registered (using "username" and "password" as the key)
-* After login, all other APIs are free to test. 
+* Create login request. Send POST request to (http://localhost:8080/login) with the registered email and password (using "username" and "password" as the key)
+* Similarly, test all other APIs using Postman
