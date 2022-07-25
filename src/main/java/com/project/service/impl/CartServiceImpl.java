@@ -7,8 +7,6 @@ import com.project.mapper.CartMapper;
 import com.project.mapper.CustomerMapper;
 import com.project.mapper.OrderItemMapper;
 import com.project.service.CartService;
-import com.project.service.CustomerService;
-import com.project.service.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
