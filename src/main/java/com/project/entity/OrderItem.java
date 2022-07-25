@@ -14,5 +14,6 @@ public class OrderItem implements Serializable {
     private Integer quantity;
     private Double price;
     private Integer menuItemId;
+    private String orderItemName;
     private Integer cartId;
 }

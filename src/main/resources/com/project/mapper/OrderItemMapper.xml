@@ -9,7 +9,7 @@
     -->
     <insert id="addOrderItem">
         insert into
-        orderitem values(DEFAULT, #{quantity}, #{price}, #{menuItemId}, #{cartId})
+        orderitem values(DEFAULT, #{quantity}, #{price}, #{menuItemId}, #{cartId}, #{orderItemName})
     </insert>
 
     <!--

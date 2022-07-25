@@ -15,7 +15,7 @@ public class CartController {
     @Autowired
     private CartService cartService;
 
-    @RequestMapping(value = "/cart", method = RequestMethod.GET)
+    @RequestMapping(value = "/cart", method = RequestMethod.POST)
     @ResponseBody
     public CartWrapper getCart() {
         return cartService.getCart();

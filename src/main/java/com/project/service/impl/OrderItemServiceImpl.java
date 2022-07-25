@@ -6,7 +6,6 @@ import com.project.entity.OrderItem;
 import com.project.mapper.CustomerMapper;
 import com.project.mapper.OrderItemMapper;
 import com.project.service.CartService;
-import com.project.service.CustomerService;
 import com.project.service.MenuItemService;
 import com.project.service.OrderItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,17 +41,17 @@ public class OrderItemServiceImpl implements OrderItemService {
 
         //get the current loggedInUser username
         String username = loggedInUser.getName();
-        System.out.println(username);
 
         //get cartId based on the username
         Integer cartId = customerMapper.getCustomerCartIdByUsername(username);
-        System.out.println(cartId);
 
         //set attributes to the new orderItem object
         orderItem.setQuantity(1);
         orderItem.setMenuItemId(menuItemId);
         orderItem.setPrice(menuItem.getPrice());
         orderItem.setCartId(cartId);
+        orderItem.setOrderItemName(menuItem.getName());
+        System.out.println(orderItem);
 
         //add orderItem in database
         orderItemMapper.addOrderItem(orderItem);

@@ -14,7 +14,7 @@ public class CheckOutController {
     @Autowired
     private CartService cartService;
 
-    @RequestMapping(value = "/checkout", method = RequestMethod.GET)
+    @RequestMapping(value = "/checkout", method = RequestMethod.POST)
     @ResponseStatus(value = HttpStatus.OK)
     public void checkout() {
         cartService.cleanCart();
