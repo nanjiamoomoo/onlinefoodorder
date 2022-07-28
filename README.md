@@ -1,4 +1,4 @@
-# onLineFoodOrder
+# OnlineFoodOrder
 
 ## **Project Description**
 A doordash like online food order web application that allows users order food online (_This repository only includes the backend portion of the project_).
