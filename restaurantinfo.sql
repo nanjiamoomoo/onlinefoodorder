@@ -1,1 +1,0 @@
-INSERT INTO restaurants VALUES (1,'773 N Mathilda Ave, Sunnyvale, CA 94085','https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1920,format=auto,quality=50/https://cdn.doordash.com/media/store%2Fheader%2F10171.png','Burger King','(408) 736-0101');
